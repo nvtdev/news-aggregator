@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit Fancy Search</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/ee7596a972ac6eb5df14534c06781814.css">
+<script src="/dist/ee7596a972ac6eb5df14534c06781814.js"></script></head>
+
+<body>
+    <!-- <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <span class="navbar-brand">News Aggregator</span>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <form id="search-form">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">News Aggregator
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-md-0">
+                            <input class="form-control search-box" id="search-input" type="text" placeholder="Search" aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-item sort-item">
+                        <div class="form-check form-check-inline">
+                            Sort By:
+                            <input class="form-check-input ml-2" type="radio" name="sortby" value="0" checked="">
+                            <label class="form-check-label">
+                                Relevance
+                            </label>
+                            <input class="form-check-input sort-radio" type="radio" name="sortby" value="1">
+                            <label class="form-check-label">
+                                Popular
+                            </label>
+                            <input class="form-check-input sort-radio" type="radio" name="sortby" value="2">
+                            <label class="form-check-label">
+                                Latest
+                            </label>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </nav>
+    <div id="search-container" class="container">
+        <div class="latest-searches">
+            <span>Latest searches: </span>
+            <div id="latest-searches"></div>
+            <a style="float:right" class="btn btn-outline-info" data-toggle="collapse" href="#sources-list" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Sources
+            </a>
+        </div>
+        <div class="sources">
+            <div id="sources-list" class="collapse"></div>
+        </div>
+        <div id="results" class="container" data-infinite-scroll="{ " path":="" ".pagination__next",="" "append":="" ".post",="" "history":="" false="" }"=""></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/dist/reddit-search.js"></script>
+</body>
+
+</html>
