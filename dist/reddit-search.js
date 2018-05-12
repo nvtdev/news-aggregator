@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({16:[function(require,module,exports) {
+})({7:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -94,7 +94,7 @@ exports.default = {
     return arr;
   }
 };
-},{}],9:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -142,7 +142,7 @@ exports.default = {
     return processedArray;
   }
 };
-},{"../common":16}],10:[function(require,module,exports) {
+},{"../common":7}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -193,7 +193,7 @@ exports.default = {
     };
   }
 };
-},{}],7:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -211,7 +211,7 @@ exports.default = {
     });
   }
 };
-},{}],8:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -439,7 +439,7 @@ function checkSavedPost(postId) {
   });
   return false;
 }
-},{"./api/reddit":9,"./api/news":10,"./twitter":7,"./cookies":8,"./common":16}],32:[function(require,module,exports) {
+},{"./api/reddit":8,"./api/news":9,"./twitter":5,"./cookies":6,"./common":7}],11:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -461,7 +461,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '42366' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '39323' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -562,5 +562,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[32,3])
+},{}]},{},[11,3])
 //# sourceMappingURL=/dist/reddit-search.map
